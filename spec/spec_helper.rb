@@ -1,1 +1,1 @@
-require File.join(File.dirname(__FILE__), '..', 'bom-weather')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'bom-weather')

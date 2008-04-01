@@ -1,0 +1,219 @@
+<!DOCTYPE weather-observations SYSTEM "http://www.bom.gov.au/dtd/weather-observations.dtd" [<!ENTITY degree "&#176;"> ]>
+
+<weather-observations>
+
+	<product id="IDV65176" name="Agricultural Observations Bulletin for Victoria" create-time-local="20080402T0950" create-time-utc="20080401T2250" time-zone="EDT">
+
+			<copyright-notice owner="Bureau of Meteorology, Australia" year="2001">
+				<text>
+		#-------------------------------------------
+					Please note the
+					&lt;a href="http://www.bom.gov.au/other/copyright.shtml"&gt;Copyright Notice and Disclaimer&lt;/a&gt;
+
+					relating to the use of the information. 
+					Users of this information are deemed to have read and accepted the
+					conditions described in the
+					&lt;a href="http://www.bom.gov.au/other/copyright.shtml"&gt;Copyright Notice and Disclaimer&lt;/a&gt;
+                                        Please note information at the foot of 
+					&lt;a href="http://www.bom.gov.au/cgi-bin/wrap_fwo.pl?IDV65176.html"&gt;html version of Agricultural Observations Bulletin&lt;/a&gt;
+				</text>
+			</copyright-notice>
+
+			<issuing-office>
+				Bureau of Meteorolgy, Victorian Regional Office
+			</issuing-office>
+
+		<group name="current">
+			<obs-def obs-time-local="20080402T0950" obs-time-utc="20080401T2250" time-zone="EDT">
+				<data-def type="tx" name="maximum temperature" unit="celsius" unit-abbreviation="&#176;C" />
+				<data-def type="tn" name="minimum temperature" unit="celsius" unit-abbreviation="&#176;C" />
+				<data-def type="tg" name="terrestrial minimum temperature" unit="celsius" unit-abbreviation="&#176;C" />
+				<data-def type="twd" name="wetbulb depression" unit="celsius" unit-abbreviation="&#176;C" />
+
+				<data-def type="r" name="rain to 9am" unit="millimetres" unit-abbreviation="mm" />
+				<data-def type="ev" name="evaporation" unit="millimetres" unit-abbreviation="mm" />
+				<data-def type="wr" name="wind run" unit="kilometres" unit-abbreviation="km" />
+				<data-def type="sn" name="sunshine" unit="hours" unit-abbreviation="h" />
+				<data-def type="solr" name="solar radiation" unit="megajoules per square metre" unit-abbreviation="MJ/sq m" />
+				<data-def type="t5" name="5cm temperature" unit="celsius" unit-abbreviation="&#176;C" />
+				<data-def type="t10" name="10cm temperature" unit="celsius" unit-abbreviation="&#176;C" />
+				<data-def type="t20" name="20cm temperature" unit="celsius" unit-abbreviation="&#176;C" />
+				<data-def type="t50" name="50cm temperature" unit="celsius" unit-abbreviation="&#176;C" />
+
+				<data-def type="t1m" name="1m temperature" unit="celsius" unit-abbreviation="&#176;C" />
+			</obs-def>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="82169" station="Corryong">
+				<d t="tx">23.1</d>
+				<d t="tn">5.4</d>
+				<d t="twd">1.0</d>
+				<d t="r">0.0</d>
+
+				<d t="ev">2.4</d>
+				<d t="wr">52</d>
+				<d t="solr">21.2</d>
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="85072" station="East Sale">
+				<d t="tx">23.2</d>
+				<d t="tn">8.6</d>
+
+				<d t="tg">5.3</d>
+				<d t="twd">2.7</d>
+				<d t="r">0.0</d>
+				<d t="ev">3.8</d>
+				<d t="wr">103</d>
+				<d t="sn">10.7</d>
+
+				<d t="solr">20.5</d>
+				<d t="t10">15.0</d>
+				<d t="t20">17.0</d>
+				<d t="t50">18.0</d>
+				<d t="t1m">19.0</d>
+			</obs>
+
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="83083" station="Edi Upper">
+				<d t="tx">21.9</d>
+				<d t="tn">9.0</d>
+				<d t="twd">4.4</d>
+				<d t="r">0.0</d>
+				<d t="ev">2.4</d>
+
+				<d t="wr">53</d>
+				<d t="solr">20.0</d>
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="80091" station="Kyabram">
+				<d t="tx">24.8</d>
+				<d t="tn">12.0</d>
+				<d t="twd">6.8</d>
+
+				<d t="r">0.0</d>
+				<d t="ev">5.2</d>
+				<d t="wr">114</d>
+				<d t="solr">20.5</d>
+				<d t="t20">17.3</d>
+				<d t="t50">19.8</d>
+
+				<d t="t1m">21.4</d>
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="82076" station="Lake Dartmouth">
+				<d t="tx">22.0</d>
+				<d t="tn">5.0</d>
+				<d t="twd">0.4</d>
+				<d t="r">0.0</d>
+
+				<d t="ev">2.8</d>
+				<d t="wr">50</d>
+				<d t="solr">20.7</d>
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="88023" station="Lake Eildon">
+				<d t="tx">23.6</d>
+				<d t="tn">8.5</d>
+
+				<d t="twd">6.7</d>
+				<d t="r">0.0</d>
+				<d t="ev">3.8</d>
+				<d t="wr">33</d>
+				<d t="sn">8.3</d>
+				<d t="solr">18.5</d>
+
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="86071" station="Melbourne">
+				<d t="tx">25.5</d>
+				<d t="tn">12.0</d>
+				<d t="tg">8.0</d>
+				<d t="twd">7.9</d>
+				<d t="r">0.0</d>
+
+				<d t="ev">5.0</d>
+				<d t="wr">151</d>
+				<d t="solr">20.2</d>
+				<d t="t10">18.0</d>
+				<d t="t20">19.0</d>
+			</obs>
+
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="86282" station="Melbourne Airport">
+				<d t="tx">25.1</d>
+				<d t="tn">12.0</d>
+				<d t="tg">14.4</d>
+				<d t="twd">5.8</d>
+				<d t="r">0.0</d>
+
+				<d t="ev">9.0</d>
+				<d t="wr">472</d>
+				<d t="sn">10.4</d>
+				<d t="solr">20.8</d>
+				<d t="t10">17.0</d>
+				<d t="t20">18.0</d>
+
+				<d t="t50">19.0</d>
+				<d t="t1m">20.0</d>
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="76031" station="Mildura ">
+				<d t="tx">26.9</d>
+				<d t="tn">13.7</d>
+				<d t="tg">16.4</d>
+
+				<d t="twd">10.7</d>
+				<d t="r">0.0</d>
+				<d t="ev">12.0</d>
+				<d t="wr">348</d>
+				<d t="sn">10.1</d>
+				<d t="solr">20.9</d>
+
+				<d t="t10">21.0</d>
+				<d t="t20">22.0</d>
+				<d t="t50">24.0</d>
+				<d t="t1m">25.0</d>
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="85277" station="Noojee">
+				<d t="tx">22.1</d>
+
+				<d t="tn">6.8</d>
+				<d t="twd">7.9</d>
+				<d t="r">0.0</d>
+				<d t="ev">4.8</d>
+				<d t="wr">180</d>
+				<d t="solr">20.1</d>
+
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="84030" station="Orbost">
+				<d t="tx">23.0</d>
+				<d t="tn">8.1</d>
+				<d t="tg">3.6</d>
+				<d t="twd">0.8</d>
+				<d t="r">Tce</d>
+
+				<d t="ev">3.3</d>
+				<d t="wr">69</d>
+				<d t="solr">19.8</d>
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="82042" station="Strathbogie">
+				<d t="tx">20.7</d>
+				<d t="tn">7.6</d>
+
+				<d t="twd">4.8</d>
+				<d t="r">0.0</d>
+				<d t="ev">5.0</d>
+				<d t="wr">125</d>
+				<d t="solr">19.5</d>
+			</obs>
+
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="81049" station="Tatura">
+				<d t="twd">5.9</d>
+				<d t="ev">9.9</d>
+				<d t="solr">20.2</d>
+				<d t="t10">14.9</d>
+				<d t="t20">16.0</d>
+
+			</obs>
+			<obs obs-time-local="20080402T0900" obs-time-utc="20080401T2200" time-zone="EDT" site ="76064" station="Walpeup RS">
+				<d t="tx">26.6</d>
+				<d t="tn">14.0</d>
+				<d t="twd">10.6</d>
+				<d t="r">0.0</d>
+				<d t="solr">20.7</d>
+
+			</obs>
+		</group>
+	</product>
+</weather-observations>
+
