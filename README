@@ -1,0 +1,10 @@
+BOMWeather
+----------
+
+
+Weather from the Australian Bureau of Meteorology
+
+This utility will use the freely supplied weather forecast data as provided by the bureau.
+At these stages it looks as though multiple format types will be parsed. 
+	XML for convenience sake
+	Hash separated text files because there isn't anything better
