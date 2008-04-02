@@ -8,3 +8,7 @@ This utility will use the freely supplied weather forecast data as provided by t
 At these stages it looks as though multiple format types will be parsed. 
 	XML for convenience sake
 	Hash separated text files because there isn't anything better
+	
+Every property that the bureau measures isn't going to be implemented in this wrapper.
+If you want additional properties, perhaps fork the git project and send them my way.
+(I'm not being lazy, I have no requirement for evaporation or temperature from 50cm off the ground!)
