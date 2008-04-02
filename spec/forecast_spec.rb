@@ -1,5 +1,13 @@
 require File.join(File.dirname(__FILE__), '..', 'lib', 'bom-weather')
 
+module ForecaseHelper
+  def valid_forecast_attributes
+    {
+      
+    }
+  end
+end
+
 describe BOMWeather::Forecast, "class" do
   it "should have maximum temperature"
   it "should have minimum tempreature"
@@ -19,4 +27,6 @@ describe BOMWeather::Forecast, "class" do
   it "should have a timezone"
   it "should have a location"
   it "should have a location id"
+  
+  it "should give a forecast for a location_id"
 end
