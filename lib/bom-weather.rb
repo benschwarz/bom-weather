@@ -3,6 +3,7 @@ require 'rubygems'
 require 'hpricot'
 require 'open-uri'
 require 'validatable'
+require 'time'
 
 # Create namespace
 module BOMWeather
