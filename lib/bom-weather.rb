@@ -1,6 +1,5 @@
 # Dependencies
 require 'rubygems'
-require 'hpricot'
 require 'open-uri'
 require 'validatable'
 require 'time'
@@ -12,4 +11,4 @@ module BOMWeather
 end
 
 # Require classes
-%w(query base forecast measurement).each{|r| require File.join(File.dirname(__FILE__), File.basename(__FILE__, '.rb'), r)}
+%w(query base forecast measurement parser location).each{|r| require File.join(File.dirname(__FILE__), File.basename(__FILE__, '.rb'), r)}

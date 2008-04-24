@@ -1,13 +1,15 @@
 module BOMWeather
   class Forecast
-    attr_accessor :location, :location_id, :timezone, :observed_at, :max_temp, :min_temp, :rain_since_nine_am
+    attr_accessor :forecast_date, :issue_time, :max_temp, :min_temp
         
     include Validatable
-    validates_presence_of :location, :location_id, :timezone, :observed_at
-    validates_true_for :observed_at, :logic => lambda { observed_at.is_a?(Time) }
+    validates_presence_of :forecast_date, :issue_time, :max_temp, :min_temp
+    
+    validates_true_for :forecast_date,  :logic => lambda { forecast_date.is_a?(Time) }
+    validates_true_for :issue_time,     :logic => lambda { issue_time.is_a?(Time) }
     
     def initialize(params)
-      @location, @location_id, @timezone, @observed_at = params[:location], params[:location_id], params[:timezone], params[:observed_at]
+      @forecast_date, @issue_time, @max_temp, @min_temp = params[:forecast_date], params[:issue_time], params[:max_temp], params[:min_temp]
     end
   end
 end
