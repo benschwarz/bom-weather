@@ -18,16 +18,15 @@ describe BOMWeather::Location do
     BOMWeather::Location.find(:location => "Arm").first.should(be_an_instance_of(BOMWeather::Location))
   end
   
-  #it "should find case-insensitive matches" do
-    #BOMWeather::Location.find(:state => "VIC").should(eql(BOMWeather::Location.find(:state => "Vic")))
-  #end
+  it "should find case-insensitive matches" do
+    BOMWeather::Location.find(:state => "Vic").should(be_an_instance_of(Array))
+  end
   
   it "should have a current forecast" do
     BOMWeather::Location.find(:location => "Arm").first.today.should(be_an_instance_of(BOMWeather::Forecast))
-    BOMWeather::Location.find(:location => "Arm").first.outlook.should(be_an_instance_of(BOMWeather::Forecast))
-    
-    puts BOMWeather::Location.find(:location => "Arm").first.today.inspect
   end
   
-  it "should have a forecast outlook"
+  it "should have a forecast outlook" do
+    BOMWeather::Location.find(:location => "Arm").first.outlook.should(be_an_instance_of(BOMWeather::Forecast))
+  end
 end

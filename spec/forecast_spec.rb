@@ -6,7 +6,8 @@ module ForecastHelper
       :forecast_date => Time.parse("20080402T0900"),
       :issue_time => Time.parse("20080402T0900"),
       :max_temp => "24",
-      :min_temp => "3"
+      :min_temp => "3",
+      :conditions => "Cloudy, patchy rain"
     }
   end
 end
@@ -20,7 +21,7 @@ describe BOMWeather::Forecast, "validation" do
   end
   
   it "should require forecast_date, issue_time, max_temp and min_temp" do
-    %w(forecast_date issue_time max_temp min_temp).each do |attr|
+    %w(forecast_date issue_time max_temp min_temp conditions).each do |attr|
       BOMWeather::Forecast.new(valid_forecast_attributes.without(attr.to_sym)).should_not be_valid
     end
   end
@@ -32,6 +33,8 @@ describe BOMWeather::Forecast, "validation" do
     BOMWeather::Forecast.new(valid_forecast_attributes.without(:issue_time).merge({:issue_time => '20080402T0900'})).should_not be_valid
     BOMWeather::Forecast.new(valid_forecast_attributes).should be_valid
   end
+  
+  it "should have a condition description"
 end
 
 describe BOMWeather::Forecast, "class attributes" do
@@ -47,7 +50,7 @@ describe BOMWeather::Forecast, "class attributes" do
   end
   
   it "should consist of forecast_date, issue_time, max_temp, min_temp" do
-    %w(forecast_date issue_time max_temp min_temp).each do |attr|
+    %w(forecast_date issue_time max_temp min_temp conditions).each do |attr|
       @forecast.should respond_to attr.to_sym
     end
   end

@@ -3,6 +3,7 @@ require 'rubygems'
 require 'open-uri'
 require 'validatable'
 require 'time'
+require 'date'
 
 # Create namespace
 module BOMWeather
@@ -11,4 +12,4 @@ module BOMWeather
 end
 
 # Require classes
-%w(query base forecast measurement parser location).each{|r| require File.join(File.dirname(__FILE__), File.basename(__FILE__, '.rb'), r)}
+%w(query base forecast parser location).each{|r| require File.join(File.dirname(__FILE__), File.basename(__FILE__, '.rb'), r)}

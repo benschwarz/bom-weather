@@ -10,22 +10,39 @@ module BOMWeather
     # Single key finder only
     def self.find(finder={})
       locations = Query.new.execute.rows.find_all{|row| row[finder.keys.first] =~ /#{finder[finder.keys.first]}/i}
+      
       @loc = locations.uniq.map do |location|
         Location.new(location)
       end
       
-      puts @loc.inspect
-      
+      return @loc
     end
     
     def today
-      @outlook
+      @outlook.first
     end
     
     private
     def map_forecast(forecast_hash)
-#      puts forecast_hash.inspect
-      @outlook = Forecast.new(forecast_hash)
+      
+      # Forecasts come in with min, max and forecast (a description)
+      # we want to create groups of each of these, check for nils as a group
+      # map the @outlook to these objects
+      
+      @outlook = []
+      (0..7).to_a.each do |i|
+        # Min, Max, forecast
+        
+        forecast = {
+          :forecast_date  => forecast_hash[:forecast_date], 
+          :issue_time     => forecast_hash[:issue_time], 
+          :max_temp       => forecast_hash["max_#{i}".to_sym], 
+          :min_temp       => forecast_hash["min_#{i}".to_sym],
+          :conditions     => forecast_hash["forecast_#{i}".to_sym]
+        }
+        
+        @outlook << Forecast.new(forecast)
+      end
     end
   end
 end
