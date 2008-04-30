@@ -7,7 +7,7 @@ module BOMWeather
     end
     
     def execute
-      Parser.new(open(@uri).read)
+      Parser.new(`curl "#{@uri}"`)
     end
   end
 end

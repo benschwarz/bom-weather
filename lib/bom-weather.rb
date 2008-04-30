@@ -1,6 +1,5 @@
 # Dependencies
 require 'rubygems'
-require 'open-uri'
 require 'validatable'
 require 'time'
 require 'date'
