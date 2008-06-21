@@ -31,14 +31,12 @@ module BOMWeather
       
       @outlook = []
       (0..7).to_a.each do |i|
-        # Min, Max, forecast
         
         # Forecast date work
         year = forecast_hash[:forecast_date].slice(0..3)
         mnth = forecast_hash[:forecast_date].slice(4..5)
         day = forecast_hash[:forecast_date].slice(6..7)
         time = Time.mktime(year,mnth,day) # the first day's time
-        
         forecast_date = (time + (86400*i))
         
         # Map the forecast
