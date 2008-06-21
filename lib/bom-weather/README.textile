@@ -1,0 +1,15 @@
+h1. BOMWeather
+
+Weather from the Australian Bureau of Meteorology (BOM)
+
+h2. Usage
+
+To get the weather forecast, there are a few options:
+
+# Getting a location by name
+<pre><code>BOMWeather::Location.find({ :location => "NAME" })</code></pre>
+# Getting a location by BOM location id
+<pre><code>BOMWeather::Location.find({ :loc_id => "ID" })</code></pre>
+# Getting a whole state's weather forecasts
+<pre><code>BOMWeather::Location.find({ :state => "STATE" })</code></pre>
+This takes state's in abbreviated form (e.g. WA, NSW, VIC)
