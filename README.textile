@@ -6,10 +6,26 @@ h2. Usage
 
 To get the weather forecast, there are a few options:
 
-# Getting a location by name
-<pre><code>BOMWeather::Location.find({ :location => "NAME" })</code></pre>
-# Getting a location by BOM location id
-<pre><code>BOMWeather::Location.find({ :loc_id => "ID" })</code></pre>
-# Getting a whole state's weather forecasts
-<pre><code>BOMWeather::Location.find({ :state => "STATE" })</code></pre>
-This takes state's in abbreviated form (e.g. WA, NSW, VIC)
+<ol>
+<li>Getting a location by name
+<pre><code>BOMWeather::Location.find({ :location => "NAME" })</code></pre></li>
+<li>Getting a location by BOM location id
+<pre><code>BOMWeather::Location.find({ :loc_id => "ID" })</code></pre></li>
+<li>Getting a whole state's weather forecasts<br />
+<pre><code>BOMWeather::Location.find({ :state => "STATE" })</code></pre><br />
+This takes state's in abbreviated form (e.g. WA, NSW, VIC)</li>
+</ol>
+
+Provided this finds a location (or locations), you will get an array of Location objects.
+
+You can then get access to the forecast information:
+
+<pre><code>loc = BOMWeather::Location.find({ :location => "NAME" })
+loc.first.outlook</code></pre>
+
+This returns an array of Forecast objects, each of which have the following accessible methods
+# max_temp
+# min_temp
+# conditions
+# forecast_date (a Time object)
+# issue_time
