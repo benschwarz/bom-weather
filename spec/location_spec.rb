@@ -27,6 +27,7 @@ describe BOMWeather::Location do
   end
   
   it "should have a forecast outlook" do
-    BOMWeather::Location.find(:location => "Arm").first.outlook.should(be_an_instance_of(BOMWeather::Forecast))
+    BOMWeather::Location.find(:location => "Arm").first.outlook.should(be_an_instance_of(Array))
+    BOMWeather::Location.find(:location => "Arm").first.outlook.first.should(be_an_instance_of(BOMWeather::Forecast))
   end
 end
